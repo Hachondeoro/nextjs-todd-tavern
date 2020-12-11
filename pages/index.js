@@ -11,9 +11,6 @@ export default function Home() {
         <title>Todd Tavern</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MultiDropdownNavbar />
-      <LandingPageHeader />
-      <FooterAboutUs />
     </>
   );
 }
