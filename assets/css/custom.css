@@ -1,0 +1,18 @@
+.new-line {
+  white-space: pre-line;
+}
+
+h5 {
+  white-space: pre-wrap;
+}
+
+body {
+  white-space: pre-wrap;
+}
+
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
