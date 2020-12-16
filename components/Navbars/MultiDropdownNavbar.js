@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, forwardRef } from "react";
 import Link from "next/link";
 import classnames from "classnames";
 
@@ -65,6 +65,11 @@ const MultiDropdownNavbar = ({ children }) => {
           </div>
           <Collapse navbar isOpen={collapseOpen}>
             <Nav className="ml-auto" navbar>
+              <Link id="navbar-brand" href="/" passHref>
+                <NavbarBrand id="navbar-brand">
+                  <i className="nc-icon nc-minimal-right" /> Home
+                </NavbarBrand>
+              </Link>
               <Link id="navbar-brand" href="/djbistro#intro" passHref>
                 <NavbarBrand id="navbar-brand">
                   <i className="nc-icon nc-minimal-right" /> DJ's Bistro
@@ -82,7 +87,7 @@ const MultiDropdownNavbar = ({ children }) => {
               </Link>
               <Link id="navbar-brand" href="/functions#intro" passHref>
                 <NavbarBrand id="navbar-brand">
-                  <i className="nc-icon nc-minimal-right" />{" "}
+                  <i className="nc-icon nc-minimal-right" />
                   Functions/Facilities
                 </NavbarBrand>
               </Link>
