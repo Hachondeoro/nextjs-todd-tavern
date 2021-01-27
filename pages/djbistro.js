@@ -5,6 +5,7 @@ import { Container, Row, Col } from "reactstrap";
 
 // core components
 import { djbistro } from "assets/information";
+import Tilt from "react-parallax-tilt";
 
 function DjBistro() {
   return (
@@ -18,13 +19,20 @@ function DjBistro() {
                 <h5>{djbistro[0].description}</h5>
                 <br />
               </Col>
-              <Col className="m-auto" md="7">
-                <img
-                  alt="FUCKING HELL NO IMAGE"
-                  src={require("assets/images/djbistro.jpg")}
-                  width="100%"
-                />
-              </Col>
+              <Tilt
+                className="m-auto"
+                glareEnable={true}
+                glareMaxOpacity={0.45}
+                scale={1.25}
+              >
+                <div style={{ height: "300px" }} perspective={500}>
+                  <img
+                    alt="FUCKING HELL NO IMAGE"
+                    src={require("assets/images/djbistro.jpg")}
+                    width="100%"
+                  />
+                </div>
+              </Tilt>
             </Row>
             <br />
             <br />
