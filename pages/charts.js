@@ -1,8 +1,7 @@
 import Head from "next/head";
 import React from "react";
-import Products from "components/Allproducts";
-import Authors from "components/AuthorsUpdate";
-// GraphCMS is used for graphql
+// import Barchart from "components/Recharts/barchart";
+// import Linechart from "components/Recharts/linechart";
 
 export default function Home() {
   return (
@@ -11,8 +10,10 @@ export default function Home() {
         <title>Todd Tavern</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Authors /> */}
-      <Products />
+      <div className="text-center" id="intro">
+        {/* <Barchart /> */}
+        {/* <Linechart /> */}
+      </div>
     </>
   );
 }

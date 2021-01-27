@@ -58,34 +58,6 @@ class Allproducts extends Component {
             );
           }}
         </Query>
-        <div className="text-center">
-          <h2>Authors</h2>
-          <Query query={AUTHORS_QUERY}>
-            {({ loading, error, data }) => {
-              if (loading) return <div>Fetching</div>;
-              if (error) return <div>Error</div>;
-              const items = data.authors;
-              return (
-                <div>
-                  {items.map((item) => (
-                    <div>
-                      <p>
-                        {item.name}:{item.country},{item.age}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              );
-            }}
-          </Query>
-          <button
-            onClick={() => {
-              alert("alert");
-            }}
-          >
-            CLICK ME
-          </button>
-        </div>
       </>
     );
   }
